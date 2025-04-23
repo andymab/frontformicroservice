@@ -1,6 +1,6 @@
 
 import 'vuetify/styles'
-//import '@mdi/font/css/materialdesignicons.css' // для иконок
+import '@mdi/font/css/materialdesignicons.css' // для иконок
 
 import { createApp } from 'vue'
 
