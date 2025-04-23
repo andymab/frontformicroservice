@@ -1,29 +1,28 @@
-# frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+---
 
-## Recommended IDE Setup
+## 📄 `frontend/README.md`
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+```markdown
+# 🖥️ Frontend SPA (Vue 3 + Vuetify 3)
 
-## Customize configuration
+Одностраничное приложение на Vue 3 + Vuetify 3. Подключается к Laravel Auth микросервису через REST API. Использует токен для авторизации.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## 🚀 Стек технологий
 
-## Project Setup
+- Vue 3 + Composition API
+- Vuetify 3
+- Vite
+- Axios
+- Vue Router
+- SCSS (модули)
+- REST API
 
-```sh
+## ⚙️ Установка
+
+```bash
+git clone https://your.repo/frontend.git
+cd frontend
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
