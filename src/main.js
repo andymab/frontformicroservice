@@ -10,14 +10,9 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import router from './router'
+import api from './plugins/axios'
 
-import axios from 'axios'
+const app = createApp(App)
+app.config.globalProperties.$axios = api
 
-const token = localStorage.getItem('token')
-if (token) {
-  axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
-}
-axios.defaults.headers.common['X-API-KEY'] = 'supersecureapikey'
-
-
-createApp(App).use(vuetify).use(router).mount('#app')
+app.use(vuetify).use(router).mount('#app')
